@@ -5,7 +5,7 @@ void sgs_clib_convert_to_upper(char*message){
    int i;
    char str[25];
    char*message;
-   *message= str[i];
+   *message= str;
    
 
    printf("Enter the string:");
