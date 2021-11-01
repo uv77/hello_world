@@ -1,11 +1,9 @@
-#include <stdio.h>
-#include "..\include\myfile.h"
+#include<stdio.h>
+#include <string.h>
+#include"uppr.h"
+
 
 int main(){
-
-    char name[] = "Abhinav";
-    sgs_clib_convert_to_upper(name);
-
-    printf("After convering to all Caps name is: %s",name);
-    //this is  my branch
+   void sgs_clib_convert_to_upper(char*message);
+    return 0;
 }
