@@ -1,20 +1,21 @@
 #include<stdio.h>
 #include<string.h>
 #include "uppr.h"
-void sgs_clib_convert_to_upper(char*message){
-   int i;
-   char str[25];
-   char*message;
-   *message= str;
-   
 
-   printf("Enter the string:");
-   scanf("%s",str);
+void sgs_clib_convert_to_upper(char message[]){
+ 
+  printf("\nNow in coverter..\n");
+  printf("Enter the string :");
+  
+  gets(message);
 
-   for(i=0;i<=strlen(str);i++){
-      if(str[i]>=97&&str[i]<=122)
-         str[i]=str[i]-32;
+   for(int i=0;i<=strlen(message);i++)
+   {
+      if(message[i]>=97&&message[i]<=122)
+
+         (message[i])=(message[i])-32;
    }
-   printf("\nString in uppercase is : %s",str);
-   return 0;
-}
+
+ printf("\nString in Upper Case = %s", message);
+
+}  
